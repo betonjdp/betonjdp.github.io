@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Applicazione web di carattere educativo, utilizzata per dimostrare la probabilità in alcuni giochi d'azzardo." />
     <link rel="icon" href="favicon.ico">
+    
     <title>Bootstrap 101 Template</title>
 
-    <!-- Bootstrap -->
+    <!-- Bootstrap and style -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/app.styles.css" rel="stylesheet"
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,11 +21,42 @@
     <![endif]-->
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Indice (on/off)</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Bet on Jdp</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Intro</a></li>
+            <li><a href="#coins">Testa e croce</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <div class="container">
+
+      <div class="starter-template">
+        <h1>Bet on Jdp</h1>
+        <p class="lead">Lavori in corso.</p>
+      </div>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
