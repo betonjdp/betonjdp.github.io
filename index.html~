@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Applicazione web di carattere educativo, utilizzata per dimostrare la probabilità in alcuni giochi d'azzardo." />
-    <link rel="icon" href="favicon.ico">
+
     
     <title>Bet on Jdp</title>
 
     <!-- Bootstrap and style -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
     <link href="css/app.styles.css" rel="stylesheet"
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -42,13 +43,63 @@
     </nav>
 
     <div class="container">
-
-      <div class="starter-template">
+      <div class="main-heading">
         <h1>Bet on Jdp</h1>
-        <p class="lead">Lavori in corso.</p>
+        <p class="lead">...lavori in corso...</p>
       </div>
-
+      <div>
+        <p>Presentazione del progetto. Presentazione del progetto. Presentazione del progetto. Presentazione del progetto. Presentazione del progetto. Presentazione del progetto. Presentazione del progetto. Presentazione del progetto. </p>
+        <p>Il concetto di probabilità, utilizzato a partire dal Seicento, è diventato con il passare del tempo la base di diverse discipline scientifiche rimanendo tuttavia non univoco. In particolare su di esso si basa una branca della statistica (la statistica inferenziale), cui fanno ricorso numerose scienze sia naturali che sociali. Il concetto di probabilità, utilizzato a partire dal Seicento, è diventato con il passare del tempo la base di diverse discipline scientifiche rimanendo tuttavia non univoco. In particolare su di esso si basa una branca della statistica (la statistica inferenziale), cui fanno ricorso numerose scienze sia naturali che sociali. Il concetto di probabilità, utilizzato a partire dal Seicento, è diventato con il passare del tempo la base di diverse discipline scientifiche rimanendo tuttavia non univoco. In particolare su di esso si basa una branca della statistica (la statistica inferenziale), cui fanno ricorso numerose scienze sia naturali che sociali. Il concetto di probabilità, utilizzato a partire dal Seicento, è diventato con il passare del tempo la base di diverse discipline scientifiche rimanendo tuttavia non univoco. In particolare su di esso si basa una branca della statistica (la statistica inferenziale), cui fanno ricorso numerose scienze sia naturali che sociali. Il concetto di probabilità, utilizzato a partire dal Seicento, è diventato con il passare del tempo la base di diverse discipline scientifiche rimanendo tuttavia non univoco. In particolare su di esso si basa una branca della statistica (la statistica inferenziale), cui fanno ricorso numerose scienze sia naturali che sociali. Il concetto di probabilità, utilizzato a partire dal Seicento, è diventato con il passare del tempo la base di diverse discipline scientifiche rimanendo tuttavia non univoco. In particolare su di esso si basa una branca della statistica (la statistica inferenziale), cui fanno ricorso numerose scienze sia naturali che sociali. Il concetto di probabilità, utilizzato a partire dal Seicento, è diventato con il passare del tempo la base di diverse discipline scientifiche rimanendo tuttavia non univoco. In particolare su di esso si basa una branca della statistica (la statistica inferenziale), cui fanno ricorso numerose scienze sia naturali che sociali. </p>
+        <p>Il concetto di probabilità, utilizzato a partire dal Seicento, è diventato con il passare del tempo la base di diverse discipline scientifiche rimanendo tuttavia non univoco. In particolare su di esso si basa una branca della statistica (la statistica inferenziale), cui fanno ricorso numerose scienze sia naturali che sociali.</p>
+      </div>
     </div><!-- /.container -->
+    
+    <div class="container">
+      <div class="page-header" id="coins">
+        <h1>Testa e croce</h1>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4">
+            Lanciamo due monete, se sono entrambe testa vince Aldo, se sono entrambe croce vince Carlo e se sono una testa e una croce vince Bruno. Ad ogni lancio puntano un euro e chi vince prende i tre euro appena giocati. Aldo e Carlo non sanno che Bruno li sta imbrogliando.
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-xs-6">
+                <img src="img/head.png" class="img-responsive" id="left_coin"/>
+              </div>
+              <div class="col-xs-6">
+                <img src="img/tail.png" class="img-responsive" id="right_coin"/>
+              </div>
+            </div>
+          </div>
+          <div class="btn-group-vertical col-md-4" role="group" aria-label="controls">
+            <button type="button" class="btn btn-default" onclick="single_flip()">Lancio singolo</button>
+            <button type="button" class="btn btn-default" onclick="multiple_flip()" id="multiple_button">Molti lanci</button>
+            <button type="button" class="btn btn-warning" onclick="reset()">Ricomincia</button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <p class="text-right">Aldo: <span class="badge" id="counterHH">0</span></p>
+        </div>
+        <div class="col-sm-4">
+          <p class="text-center">Bruno: <span class="badge" id="counterHT">0</span></p>
+        </div>
+        <div class="col-sm-4">
+          <p class="text-left">Carlo: <span class="badge" id="counterTT">0</span></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6" id="coins-barchart">
+          <p class="text-center">Istogramma</p>
+        </div>
+        <div class="col-md-6" id="coins-linechart">
+          <p class="text-center">Grafico</p>
+        </div>
+      </div>
+    </div> <!-- /.container -->
 
 
     <!-- Bootstrap core JavaScript
@@ -58,5 +109,9 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <!-- Application specific javascript -->
+    <script src="js/d3.min.js"  charset="utf-8"></script>
+    <script src="js/app.js"></script>
+    <script src="js/charts.js"></script>
   </body>
 </html>

@@ -1,7 +1,46 @@
 body {
-  padding-top: 50px;
+  padding-top: 70px;
+  padding-bottom: 30px;
 }
-.starter-template {
+
+.main-heading {
   padding: 40px 15px;
   text-align: center;
+}
+
+.theme-dropdown .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}
+
+.theme-showcase .navbar .container {
+  width: auto;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+/*** Charts ***/
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.chart-line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
 }
