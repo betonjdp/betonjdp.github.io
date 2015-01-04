@@ -100,10 +100,10 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6" id="coins-barchart">
+                <div class="col-md-6 text-center" id="coins-barchart">
                     <p class="text-center">Istogramma</p>
                 </div>
-                <div class="col-md-6" id="coins-linechart">
+                <div class="col-md-6 text-center" id="coins-linechart">
                     <p class="text-center">Grafico</p>
                 </div>
             </div>
@@ -237,5 +237,42 @@
                 </div>
             </div>
         </div>
+        <div class="container">
+            <div class="page-header" id="grattaeperdi">
+                <h1>Gratta e perdi</h1>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        I &laquo;gratta e vinci&raquo; vanno molto di moda e sono i preferiti di chi li emette: assicurano una percentuale fissa di guadagno perché basta che la somma dei premi sia inferiore del prezzo complessivo dei biglietti stampati. 
+                    </div>
+                    <div class="col-md-4">
+                      <svg width="100%" height="220" onclick="gratta_gep();">
+                        <image id="prize" x="0" y="20" width="100%" height="100%" xlink:href="img/uno.png" />
+                        <image id="mask" x="0" y="20" width="100%" height="100%" xlink:href="img/mask4.png" />
+                      </svg>
+                    </div>
+                    <div class="btn-group-vertical col-md-4" role="group" aria-label="controls">
+                        <button type="button" class="btn btn-default" onclick="new_gep();">Acquista nuovo</button>
+                        <button type="button" class="btn btn-default" onclick="many_gep();" id="gep_multiple_button">Gratta in sequenza</button>
+                        <button type="button" class="btn btn-warning" onclick="reset_gep();">Ricomincia</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <p class="text-right">Euro spesi: <span class="badge" id="counter_gep_spesi">1</span></p>
+                </div>
+                <div class="col-sm-6">
+                    <p class="text-left"><span class="badge" id="counter_gep_vinti">0</span> euro vinti.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center" id="gep-linechart">
+                    <p class="text-center">Grafico</p>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
     </body>
 </html>
